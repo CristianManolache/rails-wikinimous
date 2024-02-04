@@ -1,15 +1,65 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url("form.css");
+
+/* Default all */
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+}
+a {
+  text-decoration: none;
+}
+/*NAV BAR*/
+.navbar {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  padding: 10px 0;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+#navicon {
+  margin: 0 10px;
+}
+.btnnav {
+  margin: 0 15px;
+}
+/* Articles BODY*/
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+}
+.articlecolumn {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+/* SHOW VIEW ARTICLES & ICONS */
+.fas {
+  font-size: 20px;
+  margin: 0 10px;
+}
+.articledescription {
+  width: auto;
+  font-size: 18px;
+  margin: 10px 0;
+}
+/* FORMS EDIT PAGE */
+.articlecolumn {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
